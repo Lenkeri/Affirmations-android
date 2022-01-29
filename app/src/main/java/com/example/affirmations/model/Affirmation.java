@@ -2,8 +2,9 @@ package com.example.affirmations.model;
 
 public class Affirmation {
     public int textResourcedId;
-    public Affirmation (int resId) {
+    public int picResourcedId;
+    public Affirmation (int resId, int picId) {
         textResourcedId = resId;
-
+        picResourcedId = picId;
     }
 }
