@@ -1,10 +1,6 @@
 package com.example.affirmations.adapter;
 
 import android.content.Context;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.Icon;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,11 +41,20 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         textView.setText(text);
 
         ImageView imageView = holder.root.findViewById(R.id.pic_to_text);
-        String image = context.getResources().getString(item.picResourcedId);
+
+        imageView.setImageResource(item.picResourcedId);
+
+//        Picasso.with(context).load(animal.getIcon()).placeholder(R.drawable.logo_small).into(holder.img);
+//        imageView.setImageURI(context.getResources().getDrawable(item.picResourcedId));
+//         ImageView image = context.getResources().getString(item.picResourcedId);
 //        imageView.setImageURI(Uri.parse(image));
+//        String image = context.getResources().getString(item.picResourcedId);
+//        imageView.setImageResource(Integer.parseInt(image));
+//        imageView.setImageResource(R.drawable.pic_eight);
+//        imageView.setImageResource(Integer.parseInt(context.getResources().getString(item.picResourcedId)));
 //imageView.setImageIcon(Icon.createWithContentUri(image));
 //        imageView.setImageDrawable(Drawable.createFromPath(image));
-        imageView.setImageDrawable(image);
+//        imageView.setImageDrawable(image);
     }
 
     @Override
