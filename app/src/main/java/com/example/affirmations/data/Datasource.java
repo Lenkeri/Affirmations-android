@@ -18,7 +18,7 @@ public class Datasource {
                 new Affirmation(R.string.affirmation7, R.drawable.pic_seven),
                 new Affirmation(R.string.affirmation8, R.drawable.pic_eight),
                 new Affirmation(R.string.affirmation9, R.drawable.pic_nine),
-                new Affirmation(R.string.affirmation10, R.drawable.pic_ten)
+                new Affirmation(R.string.affirmation10, R.drawable.pic_four)
         );
     }
 }

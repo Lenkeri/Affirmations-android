@@ -1,7 +1,9 @@
 package com.example.affirmations.adapter;
 
 import android.content.Context;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,10 +44,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         String text = context.getResources().getString(item.textResourcedId);
         textView.setText(text);
 
-        ImageView imageView = holder.root.findViewById(R.id.image_viewwq);
+        ImageView imageView = holder.root.findViewById(R.id.pic_to_text);
         String image = context.getResources().getString(item.picResourcedId);
-        imageView.setImageURI(Uri.parse(image));
-
+//        imageView.setImageURI(Uri.parse(image));
+//imageView.setImageIcon(Icon.createWithContentUri(image));
+//        imageView.setImageDrawable(Drawable.createFromPath(image));
+        imageView.setImageDrawable(image);
     }
 
     @Override
